@@ -1,0 +1,142 @@
+:root {
+    --purple-dark: #6b21a8; /* Cor do texto e ícone */
+    --purple-light: #e9d5ff; /* Fundo do ícone */
+    --btn-bg: #c084fc;       /* Fundo do botão */
+    --gradient: linear-gradient(90deg, #f3e8ff 0%, #fce7f3 100%);
+}
+
+.header {
+    width: 100;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background: var(--gradient);
+    font-family: sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Quadrado arredondado do ícone */
+.icon-container {
+    background-color: var(--purple-light);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.icon {
+    color: var(--purple-dark);
+    font-size: 1.5rem;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: var(--text-2xl);
+    color: var(--purple-dark);
+    line-height: 1.5;
+    font-weight: var(--font-weight-medium);
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: var(--text-x1) ;
+    color: var(--purple-dark);
+    opacity: 0.8;
+}
+
+/* Estilização do Botão */
+.btn-primary {
+    background-color: var(--btn-bg);
+    color: var(--purple-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.9);
+}
+
+:root {
+    --card-bg: #f5f0ff;       /* Roxo bem clarinho do fundo */
+    --purple-text: #581c87;   /* Roxo escuro para o texto */
+    --icon-bg: #e9d5ff;       /* Fundo do ícone */
+    --btn-dark: #09090b;      /* Preto/Escuro do botão */
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #e2d5f8; /* Bordas finas para definição */
+    border-radius: 16px;       /* Bordas arredondadas do card */
+    padding: 24px;
+    flex: 1;                   /* Faz os cards terem o mesmo tamanho */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-icon {
+    background-color: var(--icon-bg);
+    color: var(--purple-text);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;      /* Cantos do ícone */
+}
+
+.card-title {
+    color: var(--purple-text);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.card-amount {
+    color: var(--purple-text);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+/* Estilização do Botão Preto */
+.card-action {
+    background-color: var(--btn-dark);
+    color: white;
+    border: none;
+    border-radius: 50px;      /* Botão estilo "pílula" (bem arredondado) */
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.card-action:hover {
+    opacity: 0.9;
+}
